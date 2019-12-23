@@ -20,6 +20,9 @@
                     Count
                 </th>
                 <th style="text-align:left">
+                    Sum
+                </th>
+                <th style="text-align:left">
                     Manage
                 </th>
             </tr>
@@ -27,6 +30,7 @@
             @{
                 foreach (var item in Model)
                 {
+                    int @sum = @item.Value * @item.Count;
                     <tr style="background-color: #FFFFF0">
                         <td>
                             @item.Value
@@ -34,7 +38,9 @@
                         <td>
                             @item.Count
                         </td>
-
+                        <td>
+                            @sum
+                        </td>
                         <td>
                             @Html.ActionLink("Edit", "EditBanknote", new { id = @item.Id }) / @Html.ActionLink("Delete", "DeleteBanknote", new { id = @item.Id })
                         </td>
