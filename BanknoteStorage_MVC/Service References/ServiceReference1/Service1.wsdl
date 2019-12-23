@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57683/BanknoteService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57683/BanknoteService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57683/BanknoteService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BanknoteStorage_WcfService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBanknoteService_GetAllBanknotes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBanknotes" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_GetAllBanknotes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBanknotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_AddBanknote_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBanknote" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_AddBanknote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBanknoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_EditBanknote_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditBanknote" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_EditBanknote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditBanknoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_GetBanknotesByValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanknotesByValue" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_GetBanknotesByValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanknotesByValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_GetBanknotesByCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanknotesByCount" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_GetBanknotesByCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanknotesByCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_GetBanknoteById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanknoteById" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_GetBanknoteById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanknoteByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_DeleteBanknote_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBanknote" />
+  </wsdl:message>
+  <wsdl:message name="IBanknoteService_DeleteBanknote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBanknoteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBanknoteService">
+    <wsdl:operation name="GetAllBanknotes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBanknoteService/GetAllBanknotes" message="tns:IBanknoteService_GetAllBanknotes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBanknoteService/GetAllBanknotesResponse" message="tns:IBanknoteService_GetAllBanknotes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBanknote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBanknoteService/AddBanknote" message="tns:IBanknoteService_AddBanknote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBanknoteService/AddBanknoteResponse" message="tns:IBanknoteService_AddBanknote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditBanknote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBanknoteService/EditBanknote" message="tns:IBanknoteService_EditBanknote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBanknoteService/EditBanknoteResponse" message="tns:IBanknoteService_EditBanknote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBanknotesByValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBanknoteService/GetBanknotesByValue" message="tns:IBanknoteService_GetBanknotesByValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBanknoteService/GetBanknotesByValueResponse" message="tns:IBanknoteService_GetBanknotesByValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBanknotesByCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBanknoteService/GetBanknotesByCount" message="tns:IBanknoteService_GetBanknotesByCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBanknoteService/GetBanknotesByCountResponse" message="tns:IBanknoteService_GetBanknotesByCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBanknoteById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBanknoteService/GetBanknoteById" message="tns:IBanknoteService_GetBanknoteById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBanknoteService/GetBanknoteByIdResponse" message="tns:IBanknoteService_GetBanknoteById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBanknote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBanknoteService/DeleteBanknote" message="tns:IBanknoteService_DeleteBanknote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBanknoteService/DeleteBanknoteResponse" message="tns:IBanknoteService_DeleteBanknote_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBanknoteService" type="tns:IBanknoteService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllBanknotes">
+      <soap:operation soapAction="http://tempuri.org/IBanknoteService/GetAllBanknotes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddBanknote">
+      <soap:operation soapAction="http://tempuri.org/IBanknoteService/AddBanknote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditBanknote">
+      <soap:operation soapAction="http://tempuri.org/IBanknoteService/EditBanknote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBanknotesByValue">
+      <soap:operation soapAction="http://tempuri.org/IBanknoteService/GetBanknotesByValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBanknotesByCount">
+      <soap:operation soapAction="http://tempuri.org/IBanknoteService/GetBanknotesByCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBanknoteById">
+      <soap:operation soapAction="http://tempuri.org/IBanknoteService/GetBanknoteById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBanknote">
+      <soap:operation soapAction="http://tempuri.org/IBanknoteService/DeleteBanknote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IBanknoteService" binding="tns:BasicHttpBinding_IBanknoteService">
+      <soap:address location="http://localhost:57683/BanknoteService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

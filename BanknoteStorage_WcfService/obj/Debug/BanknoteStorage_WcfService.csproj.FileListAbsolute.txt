@@ -1,0 +1,10 @@
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\bin\EntityFramework.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\bin\EntityFramework.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\obj\Debug\BanknoteStorage_WcfService.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\bin\BanknoteStorage_WcfService.dll.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\bin\BanknoteStorage_WcfService.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\bin\BanknoteStorage_WcfService.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\obj\Debug\BanknoteStorage_WcfService.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\BanknoteStorage\BanknoteStorage_WcfService\obj\Debug\BanknoteStorage_WcfService.pdb

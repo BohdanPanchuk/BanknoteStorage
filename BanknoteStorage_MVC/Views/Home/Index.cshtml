@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BanknoteStorage_MVC.Models.Banknote>
+
+@{
+    ViewBag.Title = "Banknotes Storage";
+}
+
+@using (Html.BeginForm())
+{
+    <div>
+        <h2>Banknotes Details</h2>
+        @Html.ActionLink("Add Banknote", "AddBanknote")
+    </div>
+
+    <div>
+        <table>
+            <tr style="background-color: #FFFACD; text-align:center">
+                <th style="text-align:left">
+                    Value
+                </th>
+                <th style="text-align:left">
+                    Count
+                </th>
+                <th style="text-align:left">
+                    Manage
+                </th>
+            </tr>
+
+            @{
+                foreach (var item in Model)
+                {
+                    <tr style="background-color: #FFFFF0">
+                        <td>
+                            @item.Value
+                        </td>
+                        <td>
+                            @item.Count
+                        </td>
+
+                        <td>
+                            @Html.ActionLink("Edit", "EditBanknote", new { id = @item.Id }) / @Html.ActionLink("Delete", "DeleteBanknote", new { id = @item.Id })
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+
+    <div>
+        @Html.ActionLink("Get banknotes by value", "GetBanknotesByValue")
+        <br />
+        @Html.ActionLink("Get banknotes by count", "GetBanknotesByCount")
+    </div>
+}

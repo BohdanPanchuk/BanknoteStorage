@@ -1,0 +1,10 @@
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\bin\CurrencyStorage_WcfService.dll.config
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\bin\CurrencyStorage_WcfService.dll
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\bin\CurrencyStorage_WcfService.pdb
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\bin\EntityFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\bin\EntityFramework.SqlServer.dll
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\bin\EntityFramework.xml
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\bin\EntityFramework.SqlServer.xml
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\obj\Debug\CurrencyStorage_WcfService.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\obj\Debug\CurrencyStorage_WcfService.dll
+c:\users\admin\documents\visual studio 2015\Projects\CurrencyStorage\CurrencyStorage_WcfService\obj\Debug\CurrencyStorage_WcfService.pdb

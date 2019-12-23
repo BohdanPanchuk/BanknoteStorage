@@ -1,0 +1,41 @@
+﻿@model BanknoteStorage_MVC.Models.Banknote
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Banknote</h2>
+
+@using (Html.BeginForm())
+{
+    <div style="text-align:center">
+        <table>
+            <tr>
+                <td>
+                    Value :
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Value)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Count :
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Count)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="Update" />
+                </td>
+                <td>
+                    @Html.ActionLink("Back to Main page", "Index")
+                </td>
+            </tr>
+        </table>
+    </div>
+}

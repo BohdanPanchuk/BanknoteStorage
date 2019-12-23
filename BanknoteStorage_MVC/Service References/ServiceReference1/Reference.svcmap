@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="10d18f68-c32d-4f88-8c56-d0560ef0115f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57683/BanknoteService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="b405c43a-ffd8-4b47-a081-52427a7fb27b" SourceId="1" SourceUrl="http://localhost:57683/BanknoteService.svc?wsdl" />
+    <MetadataFile FileName="BanknoteService.xsd" MetadataType="Schema" ID="9cd4fcff-5721-4d3a-a5dc-40cae6f5c646" SourceId="1" SourceUrl="http://localhost:57683/BanknoteService.svc?xsd=xsd0" />
+    <MetadataFile FileName="BanknoteService.disco" MetadataType="Disco" ID="aab2ed72-afe2-4a29-9cad-26c5477d6d7f" SourceId="1" SourceUrl="http://localhost:57683/BanknoteService.svc?disco" />
+    <MetadataFile FileName="BanknoteService1.xsd" MetadataType="Schema" ID="37c28ff9-1cbc-4f9d-aaa4-f7ea988cdc10" SourceId="1" SourceUrl="http://localhost:57683/BanknoteService.svc?xsd=xsd2" />
+    <MetadataFile FileName="BanknoteService2.xsd" MetadataType="Schema" ID="9ff563e8-00a9-4e1b-b26f-72e37f7a303a" SourceId="1" SourceUrl="http://localhost:57683/BanknoteService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

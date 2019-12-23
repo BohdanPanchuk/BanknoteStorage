@@ -1,0 +1,19 @@
+﻿@model BanknoteStorage_MVC.Models.Banknote
+
+@{
+    ViewBag.Title = "Get banknotes by value";
+}
+
+@using (Html.BeginForm())
+{
+    <div>
+        <h2>Get banknotes by value</h2>
+    </div>
+
+    <div>
+        @Html.TextBoxFor(m => m.Value)
+        <input type="submit" value="Get banknotes" />
+        <br />
+        @Html.ActionLink("Back to Main page", "Index")
+    </div>
+}

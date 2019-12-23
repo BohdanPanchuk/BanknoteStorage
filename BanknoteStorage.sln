@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanknoteStorage_WcfService", "BanknoteStorage_WcfService\BanknoteStorage_WcfService.csproj", "{7F902E77-BBBA-43CE-835E-9DE0E378F7A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanknoteStorage_MVC", "BanknoteStorage_MVC\BanknoteStorage_MVC.csproj", "{5FCCF795-CF52-497B-9102-DCB025A46CE1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F902E77-BBBA-43CE-835E-9DE0E378F7A1} = {7F902E77-BBBA-43CE-835E-9DE0E378F7A1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F902E77-BBBA-43CE-835E-9DE0E378F7A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F902E77-BBBA-43CE-835E-9DE0E378F7A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F902E77-BBBA-43CE-835E-9DE0E378F7A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F902E77-BBBA-43CE-835E-9DE0E378F7A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FCCF795-CF52-497B-9102-DCB025A46CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FCCF795-CF52-497B-9102-DCB025A46CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FCCF795-CF52-497B-9102-DCB025A46CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FCCF795-CF52-497B-9102-DCB025A46CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

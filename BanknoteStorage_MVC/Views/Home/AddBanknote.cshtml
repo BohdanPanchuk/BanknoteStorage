@@ -1,0 +1,40 @@
+﻿@model BanknoteStorage_MVC.Models.Banknote
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add New Banknote</h2>
+
+@using (Html.BeginForm())
+{
+    <div style="text-align:center">
+        <table>
+            <tr>
+                <td>
+                    Value :
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Value)
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Count :
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Count)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+                <td>
+                    @Html.ActionLink("Back to Main page", "Index")
+                </td>
+            </tr>
+        </table>
+    </div>
+}
